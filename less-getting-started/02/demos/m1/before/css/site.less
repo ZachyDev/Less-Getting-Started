@@ -1,5 +1,6 @@
 @primaryColor:#34e354;
-@secondaryColor:#222;
+@secondaryColor:gold;;
+@minWidth: 100%;
 // @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 html,
 body,
@@ -34,18 +35,19 @@ h6 {
 }
 
 /* Override the .audioplayer properties */
-
+@prefix: ps-prefix;
 .info-img {
-  max-width: 100%;
+  max-width: @minWidth;
   border: 1px @secondaryColor solid;
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
   margin: 1px;
   border-radius: 2px;
+  prefix: @prefix;
 }
 
 .container {
   font-weight: 100;
-  width: 100%;
+  width: @minWidth;
   margin: 0 auto;
   color: @secondaryColor;
   background-color: @primaryColor;
@@ -154,11 +156,11 @@ ul.menu li a {
 }
 
 @media only screen and (min-width: 989px) {
-
+  @minWidth: 100%;
   .container {
     width: 989px;
   }
   .song {
-    width: 600px;
+    width: @minWidth;
   }
 }
