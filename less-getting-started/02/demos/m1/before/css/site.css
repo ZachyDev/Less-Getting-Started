@@ -37,6 +37,14 @@ h6 {
   border-radius: 2px;
   prefix: ps-prefix;
 }
+#sharedRules {
+  font-weight: 100;
+  width: 100%;
+  margin: 0 auto;
+  color: #222;
+  background-color: #058005;
+  padding: 5px;
+}
 .container {
   font-weight: 100;
   width: 100%;

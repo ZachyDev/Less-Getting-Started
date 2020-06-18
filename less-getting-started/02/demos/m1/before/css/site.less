@@ -37,14 +37,17 @@ h6 {
   border-radius: 2px;
   prefix: @prefix;
 }
-
-.container {
+#sharedRules {
   font-weight: 100;
   width: @minWidth;
   margin: 0 auto;
   color: @secondaryColor;
   background-color: @primaryColor;
   padding: 5px;
+}
+
+.container {
+  #sharedRules();
 }
 
 header,
@@ -63,6 +66,7 @@ header {
 }
 
 footer {
+  // .container();
   justify-content: center;
   margin-top: 2px;
 }
