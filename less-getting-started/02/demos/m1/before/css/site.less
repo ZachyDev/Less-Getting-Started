@@ -6,6 +6,7 @@
   tablet: 768px;
   phone: 480px;
 }
+@highlightColor: #05bb04;
 // @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 html,
 body,
@@ -90,7 +91,7 @@ ul.menu {
 
 ul.menu li {
   margin: 5px 2px;
-  background: #6b0504;
+  background:@highlightColor;
   border-radius: 2px;
   line-height: 1.7;
   padding: 5px;
@@ -98,7 +99,7 @@ ul.menu li {
 }
 
 ul.menu li:hover {
-  background: #a3320b;
+  background:darken(@highlightColor,20%);
 }
 
 ul.menu li a {
