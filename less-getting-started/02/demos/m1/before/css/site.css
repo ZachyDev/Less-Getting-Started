@@ -109,7 +109,7 @@ ul.menu li a {
 }
 .audioplayer .audioplayer-bar {
   display: none;
-  width: 0;
+  width: 200;
 }
 .audioplayer .audioplayer-bar .audioplayer-time.audioplayer-time-duration {
   display: none;
