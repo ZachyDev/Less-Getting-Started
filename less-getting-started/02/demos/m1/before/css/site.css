@@ -103,7 +103,7 @@ ul.menu li a {
   display: none;
   width: 0;
 }
-.audioplayer .audioplayer-time.audioplayer-time-duration {
+.audioplayer .audioplayer-bar .audioplayer-time.audioplayer-time-duration {
   display: none;
 }
 @media only screen and (min-width: 480px) {
