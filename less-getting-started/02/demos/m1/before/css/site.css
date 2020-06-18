@@ -70,14 +70,14 @@ ul.menu {
 }
 ul.menu li {
   margin: 5px 2px;
-  background: #05bb04;
+  background: #41d11d;
   border-radius: 2px;
   line-height: 1.7;
   padding: 5px;
   cursor: pointer;
 }
 ul.menu li:hover {
-  background: #025702;
+  background: #174b0a;
 }
 ul.menu li a {
   text-decoration: none;

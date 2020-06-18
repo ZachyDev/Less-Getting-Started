@@ -6,7 +6,7 @@
   tablet: 768px;
   phone: 480px;
 }
-@highlightColor: #05bb04;
+@highlightColor: #41d11d;
 // @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 html,
 body,
@@ -98,8 +98,11 @@ ul.menu li {
   cursor: pointer;
 }
 
-ul.menu li:hover {
-  background:darken(@highlightColor,20%);
+ul.menu li:hover when(lightness(@highlightColor) < 20%){
+  background:lighten(@highlightColor,50%);
+}
+ul.menu li:hover when(lightness(@highlightColor) > 30%){
+  background:darken(@highlightColor,30%);
 }
 
 ul.menu li a {
