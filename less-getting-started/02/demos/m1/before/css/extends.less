@@ -4,6 +4,9 @@
 .font-info {
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
 }
-.box-me(@width: 1px) {
-    border: @width solid #222;
+.box-me(@width: 1px,@color:#000,@style:solid) {
+    border: @arguments;
+}
+.multi(@x,@y) {
+    @result: @x * @y;
 }
