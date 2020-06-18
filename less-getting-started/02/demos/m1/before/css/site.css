@@ -42,7 +42,7 @@ h6 {
   width: 100%;
   margin: 0 auto;
   color: #222;
-  background-color: #34e354;
+  background-color: #058005;
   padding: 5px;
 }
 header,
@@ -76,9 +76,6 @@ ul.menu li {
   line-height: 1.7;
   padding: 5px;
   cursor: pointer;
-}
-ul.menu li:hover {
-  background: #174b0a;
 }
 ul.menu li a {
   text-decoration: none;
