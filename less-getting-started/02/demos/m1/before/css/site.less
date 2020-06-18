@@ -81,22 +81,21 @@ ul.menu {
     line-height: 1.7;
     padding: 5px;
     cursor: pointer;
+    
+    &:hover when(lightness(@highlightColor) < 20%){
+      background:lighten(@highlightColor,50%);
+    }
+    &:hover when(lightness(@highlightColor) < 20%){
+      background:lighten(@highlightColor,50%);
+    }
+    
+   a {
+      text-decoration: none;
+      color: #ddd;
+    }
+    
   }
 
-}
-
-
-
-ul.menu li:hover when(lightness(@highlightColor) < 20%){
-  background:lighten(@highlightColor,50%);
-}
-ul.menu li:hover when(lightness(@highlightColor) > 30%){
-  background:darken(@highlightColor,30%);
-}
-
-ul.menu li a {
-  text-decoration: none;
-  color: #ddd;
 }
 
 #main {
