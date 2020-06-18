@@ -1,7 +1,3 @@
-@primaryColor:#34e354;
-@secondaryColor:#222;
-@minWidth: 100%;
-// @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 html,
 body,
 h1,
@@ -16,44 +12,38 @@ p {
   margin: 0;
   padding: 0;
 }
-
 html,
 body {
   font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
-  background: @secondaryColor;
+  background: gold;
 }
-
 h1,
 h2,
-h3, 
+h3,
 h4,
 h5,
 h6 {
   font-weight: 700;
 }
-
 /* Override the .audioplayer properties */
-@prefix: ps-prefix;
-.@{prefix}-info-img {
-  max-width: @minWidth;
-  border: 1px @secondaryColor solid;
+.info-img {
+  max-width: 100%;
+  border: 1px gold solid;
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
   margin: 1px;
   border-radius: 2px;
-  // prefix: @prefix;
+  prefix: ps-prefix;
 }
-
 .container {
   font-weight: 100;
-  width: @minWidth;
+  width: 100%;
   margin: 0 auto;
-  color: @secondaryColor;
-  background-color: @primaryColor;
+  color: gold;
+  background-color: #34e354;
   padding: 5px;
 }
-
 header,
 footer {
   display: flex;
@@ -64,25 +54,20 @@ footer {
   clear: both;
   margin: 0;
 }
-
 header {
   margin-bottom: 2px;
 }
-
 footer {
   justify-content: center;
   margin-top: 2px;
 }
-
 footer {
   display: flex;
 }
-
 ul.menu {
   list-style-type: none;
   display: flex;
 }
-
 ul.menu li {
   margin: 5px 2px;
   background: #6b0504;
@@ -91,50 +76,40 @@ ul.menu li {
   padding: 5px;
   cursor: pointer;
 }
-
 ul.menu li:hover {
   background: #a3320b;
 }
-
 ul.menu li a {
   text-decoration: none;
   color: #ddd;
 }
-
 #main {
   display: block;
 }
-
 .song {
   width: 175px;
   border-radius: 10px;
   padding: 6px;
   margin: 2px 0;
-  background-color: rgba(255, 255, 255, .25);
-  border: 1px @secondaryColor solid;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px gold solid;
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
 }
-
 .song .title {
   font-weight: 700;
 }
-
 .audioplayer .audioplayer-bar {
   display: none;
   width: 0;
 }
-
 .audioplayer .audioplayer-time.audioplayer-time-duration {
   display: none;
 }
-
-
 @media only screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
-
 @media only screen and (min-width: 767px) {
   .info-img {
     float: right;
@@ -143,24 +118,19 @@ ul.menu li a {
   .song {
     width: 95%;
   }
-
   .audioplayer .audioplayer-bar {
     display: block;
     width: auto;
   }
-
   .audioplayer .audioplayer-time.audioplayer-time-duration {
     display: block;
   }
-
 }
-
 @media only screen and (min-width: 989px) {
-  @minWidth: 100%;
   .container {
     width: 989px;
   }
   .song {
-    width: @minWidth;
+    width: 100%;
   }
 }
